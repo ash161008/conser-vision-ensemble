@@ -129,3 +129,10 @@ tests/test_pipeline.py 16 tests
   out-of-fold errors, 23 of 25 were images where the detector found no animal at
   all, so the classifier received a background crop and predicted `blank`. That
   is a detection problem; no downstream classifier fixes it.
+- **Blend weights are heuristic, not learned.** `(1 / val_log_loss) ** 2` with a
+  0.95 prune threshold is a hand-tuned rule. The principled version would
+  optimise a weight vector directly against log-loss on out-of-fold predictions.
+  That was not possible here: the original training runs saved test predictions
+  only, not the held-out fold predictions needed to fit weights against labels.
+  Saving OOF alongside test predictions is the first change I would make if
+  repeating this.
