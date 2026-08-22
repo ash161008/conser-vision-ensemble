@@ -1,0 +1,6 @@
+# Pinned so a clone reproduces the same numerical result.
+numpy==2.4.4
+pandas==3.0.2
+
+# Development only
+pytest==9.1.1

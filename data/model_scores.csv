@@ -1,0 +1,11 @@
+model,log_loss
+convnext_base_fold0_preds,0.812599
+convnext_base_fold1_preds,0.906677
+convnext_base_fold2_preds,1.090757
+convnext_base_fold3_preds,1.039556
+convnext_base_fold4_preds,0.85437
+dinov2_fold0_preds,0.6905
+dinov2_fold1_preds,0.7828
+dinov2_fold2_preds,0.8527
+dinov2_fold3_preds,0.8322
+dinov2_fold4_preds,0.7107

@@ -1,0 +1,15 @@
+# Data and outputs are not committed - prediction CSVs are large and
+# regenerable, and committing them makes the repo unclonable.
+data/predictions/*.csv
+data/submission_format.csv
+output/
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.DS_Store
+.idea/
+.vscode/
