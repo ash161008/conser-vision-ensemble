@@ -1,5 +1,7 @@
 # Conser-vision Ensemble Pipeline
 
+![CI](https://github.com/ash161008/conser-vision-ensemble/actions/workflows/ci.yml/badge.svg)
+
 A reproducible batch pipeline that blends per-fold model predictions into a
 competition submission. Placed **12th** on the DrivenData Conser-vision wildlife
 camera-trap leaderboard (multi-class log-loss **0.7644**).
